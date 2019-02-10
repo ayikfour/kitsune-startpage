@@ -1,0 +1,135 @@
+* {
+	font-family: 'Fira Mono', monospace;
+	outline: none;
+}
+
+html,
+body {
+	height: 100% !important;
+	padding: 0;
+	margin: 0;
+	overflow: hidden;
+}
+
+body {
+	background: #232426;	
+}
+
+a {
+	color: #FFF !important;
+	font-size: 2.2vw  !important;
+	font-stretch: condensed;
+	font-weight: bold !important;
+	text-decoration: none;
+}
+
+#container {
+	height: 100%;
+	width: 100%;
+}
+
+#container #searchbox {
+	font-family: 'Fira Mono', monospace;
+	font-weight: 500;
+	font-size: 10pt;	
+	background: rgb(51, 51, 51) !important;
+	border: none;
+	color: #FFF;
+	height: 30px;
+	width: 100%;
+	padding:  .5vw 1.1vw; 
+	/* position: fixed; */
+}
+
+#container #howto {	
+	font-family: 'Fira Mono', monospace;
+	font-weight: 500;
+	background: rgb(29, 29, 29) !important;
+	color: rgb(95, 95, 95);
+	font-size: 7pt;
+	padding:  .2vw 1.1vw; 
+}
+
+#container #mascot {
+	height: 4vw !important;
+	width: 13vw !important;
+	text-align: center;
+	line-height: 3vw;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+	left: 0px;
+	margin: auto;
+}
+
+#container .boxes {	
+	height: 4vw !important;
+	width: 6vw !important;
+	line-height: 3vw;
+	text-align: center;
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	margin: auto;
+}
+
+#container .subboxes {
+	border-radius: 50%;
+	height: inherit !important;
+	width: inherit !important;	
+}
+
+.subboxes > .desc {
+	color: rgb(131, 131, 131);
+	line-height: 2em !important;	
+	margin: 0 !important;
+	font-size: .5em;
+	letter-spacing: 0.05em;
+}
+
+#container #one.boxes {	
+	left: 8vw;
+}
+
+#container #two.boxes {	
+	left: 18vw;
+}
+
+#container #three.boxes {
+	left: 28vw;
+}
+
+#container #four.boxes {
+	right: 28vw;
+}
+
+#container #five.boxes {	
+	right: 18vw;
+}
+
+#container #six.boxes {	
+	right: 8vw;
+}
+
+#container .dots {
+	background: #60646D;
+	border-radius: 50%;	
+	height: .8vw;
+	width: .8vw;
+	position: fixed;	
+}
+
+#container #bottom_left.dots {
+	bottom: 30px;
+	left: 30px;
+}
+
+#container #bottom_right.dots {
+	bottom: 30px;
+	right: 30px;
+}
+
+.boxes:hover{
+	transform: scale(1.5);
+}
