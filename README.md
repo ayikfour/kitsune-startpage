@@ -2,7 +2,7 @@
 
 <img src="preview_kitsune.png" width="100%">
 
-[Live Demo](https://ayikfour.github.io/kitsune/) of <i>kitsune/i>.
+[Live Demo](https://ayikfour.github.io/kitsune/) of <i>kitsune</i>.
 
 About
 -------------------------------
