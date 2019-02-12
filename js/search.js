@@ -13,46 +13,53 @@ String.prototype.replaceChars = function (character, replacement) {
 }
 
 function search(query) {
-    switch (query.substr(0, 2)) {   
-        case "y/":
-            query = query.substr(3);
+    switch (query.substr(0, 1)) {   
+        case "y":
+            query = query.substr(2);
             window.location =
                 "https://www.youtube.com/results?search_query=" +
                 query.replaceChars(" ", "+");
             break;
 
-        case "w/":
-            query = query.substr(3);
+        case "w":
+            query = query.substr(2);
             window.location =
                 "https://en.wikipedia.org/w/index.php?search=" +
                 query.replaceChars(" ", "%20");
             break;
 
-        case "n/":
-            query = query.substr(3);
+        case "n":
+            query = query.substr(2);
             window.location =
                 "https://www.nyaa.si/?f=0&c=1_2&q=" +
                 query.replaceChars("+", "%2B");
             break;
 
-        case "m/":
-            query = query.substr(3);
+        case "m":
+            query = query.substr(2);
             window.location =
                 "https://myanimelist.net/search/all?q=" +
                 query.replaceChars(" ", "%20");
             break;
 
-        case "p/":
-            query = query.substr(3);
+        case "p":
+            query = query.substr(2);
             window.location =            
                 "https://id.pinterest.com/search/pins/?q=" +
                 query.replaceChars(" ", "%20");
             break;
 
-        case "r/":
-            query = query.substr(3);
+        case "r":
+            query = query.substr(2);
             window.location =            
                 "https://www.reddit.com/search?q=" +
+                query.replaceChars(" ", "%20");
+            break;
+               
+        case "k":
+            query = query.substr(2);
+            window.location =            
+                "https://kbbi.web.id/" +
                 query.replaceChars(" ", "%20");
             break;
                
