@@ -59,7 +59,14 @@ function search(query) {
         case "k":
             query = query.substr(2);
             window.location =            
-                "https://kbbi.web.id/" +
+                "https://kbbi.kemdikbud.go.id/entri/" +
+                query.replaceChars(" ", "%20");
+            break;
+
+        case "t":
+            query = query.substr(2);
+            window.location =            
+                "https://translate.google.com/#view=home&op=translate&sl=en&tl=id&text=" +
                 query.replaceChars(" ", "%20");
             break;
                
@@ -75,9 +82,9 @@ window.onload = function () {
     searchinput = document.getElementById("searchbox");
     searchinput.focus();
     
-    $(window).focus(() => {
-        searchinput.focus();
-    })
+    // $(window).focus(() => {
+    //     searchinput.focus();
+    // })
 
     if (!!searchinput) {
         searchinput.addEventListener("keypress", function (a) {
